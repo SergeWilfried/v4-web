@@ -1,0 +1,57 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appIDs": [
+                    "{PLACE_YOUR_APP_ID_HERE}"
+                ],
+                "components": [
+                    {
+                        "/": "/"
+                    },
+                    {
+                        "/": "/#/"
+                    },
+                    {
+                        "/": "*/markets"
+                    },
+                    {
+                        "/": "*/trade"
+                    },
+                    {
+                        "/": "*/trade/*"
+                    },
+                    {
+                        "/": "*/portfolio"
+                    },
+                    {
+                        "/": "*/portfolio/overview"
+                    },
+                    {
+                        "/": "*/portfolio/positions"
+                    },
+                    {
+                        "/": "*/portfolio/orders"
+                    },
+                    {
+                        "/": "*/portfolio/fees"
+                    },
+                    {
+                        "/": "*/portfolio/history/trades"
+                    },
+                    {
+                        "/": "*/portfolio/history/transfers"
+                    },
+                    {
+                        "/": "*/portfolio/history/funding"
+                    },
+                    {
+                        "/": "/walletsegue",
+                        "comment": "Callback link for WalletSegue/Coinbase SDK"
+                    }
+                ]
+            }
+        ]
+    }
+}
