@@ -27,10 +27,10 @@ export enum SupportedLocales {
   DE = 'de',
 }
 
-export const EN_LOCALE_DATA = {
-  ...LOCALE_DATA[SupportedLocales.EN],
-  ...NOTIFICATIONS[SupportedLocales.EN],
-  TOOLTIPS: TOOLTIPS[SupportedLocales.EN],
+export const FR_LOCALE_DATA = {
+  ...LOCALE_DATA[SupportedLocales.FR],
+  ...NOTIFICATIONS[SupportedLocales.FR],
+  TOOLTIPS: TOOLTIPS[SupportedLocales.FR],
 };
 
 export const STRING_KEYS = {
@@ -46,7 +46,7 @@ export const STRING_KEY_VALUES = Object.fromEntries(
 
 export type StringKey = keyof typeof STRING_KEYS;
 
-export type LocaleData = typeof EN_LOCALE_DATA;
+export type LocaleData = typeof FR_LOCALE_DATA;
 
 export type StringGetterFunction = (a: {
   key: string;

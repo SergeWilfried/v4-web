@@ -1,7 +1,7 @@
 import { createSelector } from 'reselect';
 import _ from 'lodash';
 
-import { EN_LOCALE_DATA, LocaleData, SupportedLocales } from '@/constants/localization';
+import { FR_LOCALE_DATA, LocaleData, SupportedLocales } from '@/constants/localization';
 
 import formatString from '@/lib/formatString';
 
@@ -40,7 +40,7 @@ export const getStringGetterForLocaleData = (localeData: LocaleData) => {
     params?: { [key: string]: string | React.ReactNode };
   }): string | Array<string | React.ReactNode> => {
     // Fallback to english whenever a key doesn't exist for other languages
-    const formattedString: string = _.get(localeData, key) || _.get(EN_LOCALE_DATA, key) || '';
+    const formattedString: string = _.get(localeData, key) || _.get(FR_LOCALE_DATA, key) || '';
 
     return formatString(formattedString, params);
   };

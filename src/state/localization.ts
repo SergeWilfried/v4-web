@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
 
-import { EN_LOCALE_DATA, LocaleData, SupportedLocales } from '@/constants/localization';
+import { FR_LOCALE_DATA, LocaleData, SupportedLocales } from '@/constants/localization';
 
 export interface LocalizationState {
   isLocaleLoaded: boolean;
@@ -11,7 +11,7 @@ export interface LocalizationState {
 
 const initialState: LocalizationState = {
   isLocaleLoaded: false,
-  localeData: EN_LOCALE_DATA,
+  localeData: FR_LOCALE_DATA,
   selectedLocale: SupportedLocales.EN,
 };
 
